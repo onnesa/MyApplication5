@@ -23,7 +23,7 @@ public class RetrofitApi {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constant.API_BASE_URL)
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create()) // 添加Rx适配器
-                .addConverterFactory(GsonConverterFactory.create()) // 添加Gson转换器
+                .addConverterFactory(GsonConverterFactory.create()) // 添加Gson转换器1
                 .client(okHttpClient)
                 .build();
         service = retrofit.create(RetrofitService.class);
